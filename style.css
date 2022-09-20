@@ -1,0 +1,127 @@
+:root{
+    /* Primary */
+
+--pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+/* Neutral */
+
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+/* body picture{
+    width: 100%;
+} */
+main{
+    width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.05);
+}
+ul{
+    list-style: none;
+}
+.header-img{
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+main article:nth-child(2){
+    text-align:center;
+    line-height: 1.8;
+    padding: 2em;
+}
+main article:nth-child(2) h2{
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: .5em;
+}
+main article:nth-child(2) p{
+    font-weight: 500;
+    color:hsl(224, 23%, 55%);
+}
+.plan{
+    margin: 0 2.5em 2em;
+    padding: 1em;
+    background-color: var(--very-pale-blue);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1em;
+}
+.plan ul{
+    margin-left: -3em
+}
+ul li:first-child{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1.01rem;
+}
+ul li:last-child{
+    color:hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.plan a{
+    color:var(--Bright-blue);
+    font-weight: 700;
+}
+main article:last-child{
+    margin: 0 2.5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-family: inherit;
+    font-weight: 700;
+    color: white;
+    background-color: var(--Bright-blue);
+    padding: 1em;
+    width: 100%;
+    border-radius: .8em;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 3px 5px 15px rgba(157, 151, 227, 0.8);
+    margin-bottom: 1.8em;
+}
+button:hover{
+    background-color:rgb(100, 91, 195);
+}
+main article:last-child p{
+    font-weight: 700;
+    color:hsl(224, 23%, 55%);
+    font-size: 1rem;
+    cursor: pointer;
+}
+main article:last-child p:hover{
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+@media (min-width: 1440px){
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
